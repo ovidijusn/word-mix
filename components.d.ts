@@ -7,6 +7,10 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    copy: typeof import('./src/components/LetterCell copy.vue')['default']
+    Game: typeof import('./src/components/Game.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    LetterCell: typeof import('./src/components/LetterCell.vue')['default']
+    LetterGrid: typeof import('./src/components/LetterGrid.vue')['default']
   }
 }
